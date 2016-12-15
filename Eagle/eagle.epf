@@ -1,0 +1,27 @@
+[Eagle]
+Version="07 07 00"
+Platform="Linux"
+Serial="62191E841E-LSR-WLM-1EL"
+Globals="Globals"
+Desktop="Desktop"
+
+[Globals]
+AutoSaveProject=1
+UsedLibrary="/home/shaun/eagle-7.7.0/lbr/atmel.lbr"
+UsedLibrary="/home/shaun/eagle-7.7.0/lbr/battery.lbr"
+UsedLibrary="/home/shaun/Downloads/SparkFun-DigitalIC.lbr"
+UsedLibrary="/home/shaun/Downloads/nrf24l01.lbr"
+UsedLibrary="/home/shaun/Downloads/Arduino-clone.lbr"
+UsedLibrary="/home/shaun/Downloads/Arduino-clone (copy).lbr"
+UsedLibrary="/home/shaun/Downloads/diy-modules.lbr"
+UsedLibrary="/home/shaun/Downloads/wirepad.lbr"
+
+[Win_1]
+Type="Control Panel"
+Loc="430 250 1596 1055"
+State=2
+Number=0
+
+[Desktop]
+Screen="3840 1080"
+Window="Win_1"
