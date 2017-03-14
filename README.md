@@ -3,6 +3,8 @@
 This is a repository for the Arduino code and some CAD files for making PCBs for making a transmitter and receiver
 for controlling throttle on an ESC.
 
+Corresponding Thingiverse page http://www.thingiverse.com/thing:1864536
+
 In the Arduino folder there are two sub-folders one for the transmitter/controller and one for the receiver that gets the signal
 and sends a PWM signal to an ESC.  The code has comments to explain what the parts do but key points are the transmitter expects
 to read an analog signal from a potentiometer on pin A1 and the receiver expects to write a PWM signal to digital pin 5.
