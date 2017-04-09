@@ -40,18 +40,18 @@ RF24 radio(CE_PIN, CS_PIN);
 
 //Pipe matches pipe in transmitter
 const uint64_t PIPE = 0xE8E8F0F0E1LL;
+uint8_t PIPE_NUM =1;
 
 // Buffer for reading in the payload sent by the transmitter/controller
 int msg[1]; 
 
 
 void setup(void){
-  
   radio.begin();
   radio.setPALevel(RF24_PA_LOW);
   radio.setDataRate(RF24_250KBPS);
   radio.setChannel(108);
-  radio.openReadingPipe(1,PIPE);
+  radio.openReadingPipe(PIPE_NUM,PIPE);
   radio.startListening();
   pinMode(5, OUTPUT);
 
@@ -66,7 +66,7 @@ void setup(void){
 }
 void loop(void){
   
-  if (radio.available()){
+  if (radio.available(&PIPE_NUM)){
   
     #ifdef DEBUGMODE 
     radio.printDetails();
@@ -75,7 +75,7 @@ void loop(void){
     bool done = false;
     while (!done){
       done = radio.read(msg, 1);
-      if (msg[0] ==0){
+      if (msg[0] <= 0 || msg[0] > 254){
         #ifdef DEBUGMODE
         Serial.println("Bad signal received");
         digitalWrite(LED1, HIGH);
@@ -83,7 +83,7 @@ void loop(void){
         
       } else {
         // Translates value sent over wifi to microseconds in range for ESC
-        int msgInMicroSeconds = map(msg[0],1,255, ESC_MIN, ESC_MAX);
+        int msgInMicroSeconds = map(msg[0],1,254, ESC_MIN, ESC_MAX);
         myServo.writeMicroseconds(msgInMicroSeconds);
         timeElapsed = 0;
         
