@@ -55,11 +55,11 @@ void loop() {
 
   //Map value from 1 to 255 (skipping 0 since receiver seems to see that as bad data), was 10-bit from analog read mapping to 8-bit
   //to fit in the payload as a single byte.
-  int mappedValue = map(sensorValue, min, max, 1, 255);
+  int mappedValue = map(sensorValue, min, max, 1, 254);
   if (mappedValue < 1)
     mappedValue = 1;
-  if (mappedValue > 255)
-    mappedValue = 255;
+  if (mappedValue > 254)
+    mappedValue = 254;
 
 #ifdef DEBUGMODE
   radio.printDetails();
