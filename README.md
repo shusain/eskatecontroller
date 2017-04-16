@@ -17,6 +17,8 @@ to a copper plate then etched to make a PCB at home, there are lots of instructi
 here.  Using the Eagle files one could also export files for a professional fabrication house to make them or forgo them
 entirely.
 
+![PCB](Eagle/pcb.png)
+
 For the EagleCAD PCB the specific parts used are:
 
   - [Arduino Pro Mini 3.3V](https://www.amazon.com/Diymall-Atmega328-Atmega328p-Arduino-Esp8266/dp/B00NWF2DAU/)
