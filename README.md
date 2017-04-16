@@ -12,7 +12,7 @@ and sends a PWM signal to an ESC.  The code has comments to explain what the par
 to read an analog signal from a potentiometer on pin A1 and the receiver expects to write a PWM signal to digital pin 5.
 
 The PCB in the Eagle folder and corresponding Eagle files can be used for simplifying and solidifying the connections between
-the battery, Arduino and RF module.  There is a PNG in the Eagle folder that can be printed using a laser printer and transferred
+the battery, Arduino and RF module.  There is a PNG in the Images folder that can be printed using a laser printer and transferred
 to a copper plate then etched to make a PCB at home, there are lots of instructions online on how to do this but not included
 here.  Using the Eagle files one could also export files for a professional fabrication house to make them or forgo them
 entirely.
