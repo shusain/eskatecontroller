@@ -17,8 +17,16 @@ to a copper plate then etched to make a PCB at home, there are lots of instructi
 here.  Using the Eagle files one could also export files for a professional fabrication house to make them or forgo them
 entirely.
 
-![PCB](Images/pcb.png)
-![PCB color](Images/pcbcolor.png)
+<table>
+<tr>
+<td>
+<img src="Images/pcb.png" width="200px"/>
+</td>
+<td>
+<img src="Images/pcbcolor.png" width="200px"/>
+</td>
+</tr>
+</table>
 
 For the EagleCAD PCB the specific parts used are:
 
