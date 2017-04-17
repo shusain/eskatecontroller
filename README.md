@@ -26,6 +26,11 @@ entirely.
 <img src="Images/pcbcolor.png" width="200px"/>
 </td>
 </tr>
+<tr>
+<td colspan="2">
+<img src="Images/IMG_20170416_163019.jpg"/>
+</td>
+</tr>
 </table>
 
 For the EagleCAD PCB the specific parts used are:
