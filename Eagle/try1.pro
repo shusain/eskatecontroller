@@ -1,25 +1,25 @@
 EAGLE AutoRouter Statistics:
 
-Job           : /home/shaun/eagle/RC Controller/try1.brd
+Job           : /home/shaun/eagle/RC CONTROLLER/try1.brd
 
-Start at      : 15:46:32 (12/12/16)
-End at        : 15:46:33 (12/12/16)
-Elapsed time  : 00:00:00
+Start at      : 18:34:53 (4/15/17)
+End at        : 18:35:05 (4/15/17)
+Elapsed time  : 00:00:10
 
-Signals       :    11   RoutingGrid: 25 mil  Layers: 1
-Connections   :    16   predefined:  0 ( 0 Vias )
+Signals       :     9   RoutingGrid: 15 mil  Layers: 1
+Connections   :    15   predefined:  4 ( 0 Vias )
 
-Router memory :   10710
+Router memory :   129150
 
-Passname          :     Route Optimize1 Optimize2 Optimize3 Optimize4
+Passname          : TopRouter     Route Optimize1 Optimize2 Optimize3 Optimize4
 
-Time per pass     :  00:00:00  00:00:00  00:00:00  00:00:00  00:00:00
-Number of Ripups  :        13         0         0         0         0
-max. Level        :         3         0         0         0         0
-max. Total        :         5         0         0         0         0
+Time per pass     :  00:00:09  00:00:01  00:00:00  00:00:00  00:00:00  00:00:00
+Number of Ripups  :         0         0         0         0         0         0
+max. Level        :         0         0         0         0         0         0
+max. Total        :         0         0         0         0         0         0
 
-Routed            :        16        16        16        16        16
-Vias              :         0         0         0         0         0
-Resolution        :   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %
+Routed            :         0        11        11        11        11        11
+Vias              :         0         0         0         0         0         0
+Resolution        :    26.7 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %
 
 Final             : 100.0% finished
