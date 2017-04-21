@@ -7,6 +7,9 @@ Corresponding Thingiverse page http://www.thingiverse.com/thing:1864536
 
 Related part for holding the batteries onto the bottom of the board and for covering the VESC and voltage/amperage display http://www.thingiverse.com/thing:2243206
 
+Other related part remixed VESC case
+http://www.thingiverse.com/thing:2263285
+
 In the Arduino folder there are two sub-folders one for the transmitter/controller and one for the receiver that gets the signal
 and sends a PWM signal to an ESC.  The code has comments to explain what the parts do but key points are the transmitter expects
 to read an analog signal from a potentiometer on pin A1 and the receiver expects to write a PWM signal to digital pin 5.
