@@ -31,6 +31,22 @@ entirely.
 <img src="Images/IMG_20170416_163019.jpg"/>
 </td>
 </tr>
+<tr>
+<td>
+<img src="Images/IMG_20170420_181015.jpg"/>
+</td>
+<td>
+<img src="Images/IMG_20170420_203645.jpg"/>
+</td>
+</tr>
+<tr>
+<td>
+<img src="Images/IMG_20170420_202947.jpg"/>
+</td>
+<td>
+<img src="Images/IMG_20170420_203124.jpg"/>
+</td>
+</tr>
 </table>
 
 For the EagleCAD PCB the specific parts used are:

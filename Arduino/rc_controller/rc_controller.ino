@@ -2,7 +2,7 @@
 #include "nRF24L01.h" //https://github.com/maniacbug/RF24
 #include "RF24.h"     //https://github.com/maniacbug/RF24
 
-#define DEBUGMODE //Comment this out to turn off debug messages and use of serial
+//#define DEBUGMODE //Comment this out to turn off debug messages and use of serial
 
 #ifdef DEBUGMODE
   #include "printf.h"
@@ -16,8 +16,8 @@
 //for the ESC
 
 //*** ADJUST THESE FOR YOUR CONTROLLER ***//
-int max = 488;
-int min = 342;
+int max = 622;
+int min = 457;
 
 // Everything below here can remain the same assuming you use analog pin 1 and standard pin layout for the rf module
 // https://arduino-info.wikispaces.com/Nrf24L01-2.4GHz-HowTo See "Arduino pin for RF24 Library"
@@ -37,7 +37,7 @@ void setup() {
   //Start up and setup the radio configuration
   //TODO: there are lots of forks of this library see which one appears most active consider switching.
   radio.begin();
-  radio.setPALevel(RF24_PA_LOW);    //Set power level, lower consumes less power but is more easily obstructed
+  radio.setPALevel(RF24_PA_HIGH);    //Set power level, lower consumes less power but is more easily obstructed
   radio.openWritingPipe(pipe);      //Controller only transmits for the time being so we open a connection to send data
   radio.setDataRate(RF24_250KBPS);  //Using a relatively low data rate, should have a bit better reliability and is sufficient for small payload
   radio.setChannel(108);            //Uses the last possible channel on the nrf module
@@ -63,7 +63,7 @@ void loop() {
 
 #ifdef DEBUGMODE
   radio.printDetails();
-  Serial.println(mappedValue);
+  Serial.println(sensorValue);
 #endif
 
   msg[0] = mappedValue;
