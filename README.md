@@ -27,8 +27,11 @@ entirely.
 </td>
 </tr>
 <tr>
-<td colspan="2">
+<td>
 <img src="Images/IMG_20170416_163019.jpg"/>
+</td>
+<td>
+<img src="Images/IMG_20170416_162953.jpg"/>
 </td>
 </tr>
 <tr>
