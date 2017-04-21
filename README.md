@@ -19,10 +19,10 @@ entirely.
 
 <table>
 <tr>
-<td>
+<td style="text-align:center">
 <img src="Images/pcb.png" width="200px"/>
 </td>
-<td>
+<td style="text-align:center">
 <img src="Images/pcbcolor.png" width="200px"/>
 </td>
 </tr>
