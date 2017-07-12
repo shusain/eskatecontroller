@@ -9,7 +9,7 @@
   //  Note if the printf.h is not found copy it from the RF24 examples in the ping pair demo
   //  there is a printf.h, copy to the RF24 folder in your libraries and restart arduino.
 #endif
- 
+
 //These values are used to keep track of bounds of the analog input
 //the values are translated into a range of 1-255 to transmit to the
 //receiver, on that side it will map the value to 1500-2000 micro seconds
@@ -63,7 +63,7 @@ void loop() {
 
 #ifdef DEBUGMODE
   //radio.printDetails();
-  Serial.println(mappedValue);
+  Serial.println(sensorValue);
 #endif
 
   msg[0] = mappedValue;
