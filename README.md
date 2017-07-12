@@ -137,6 +137,10 @@ If you have issues or these instructions are unclear (cat stuck in toaster) let 
 
 ---
 
+Extra note for charging the LiPo can either use a TP4056 or just attach or keep attached the original balance lead.
+
+---
+
 MIT License
 
 Copyright 2017 Shaun Husain
