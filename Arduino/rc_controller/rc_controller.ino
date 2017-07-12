@@ -16,8 +16,8 @@
 //for the ESC
 
 //*** ADJUST THESE FOR YOUR CONTROLLER ***//
-int max = 622;
-int min = 457;
+int max = 621;
+int min = 458;
 
 // Everything below here can remain the same assuming you use analog pin 1 and standard pin layout for the rf module
 // https://arduino-info.wikispaces.com/Nrf24L01-2.4GHz-HowTo See "Arduino pin for RF24 Library"
@@ -27,7 +27,7 @@ RF24 radio(9, 10);                      //Creates the radio object for config an
 const uint64_t pipe = 0xE8E8F0F0E1LL;   //ID for the connection
 int SW1 = 7;
 
-int sensorPin = A1;    // select the input pin for the potentiometer
+int sensorPin = A2;    // select the input pin for the potentiometer
 int sensorValue = 0;  // variable to store the value coming from the sensor
 
 
@@ -37,10 +37,10 @@ void setup() {
   //Start up and setup the radio configuration
   //TODO: there are lots of forks of this library see which one appears most active consider switching.
   radio.begin();
-  radio.setPALevel(RF24_PA_HIGH);    //Set power level, lower consumes less power but is more easily obstructed
+  radio.setPALevel(RF24_PA_LOW);    //Set power level, lower consumes less power but is more easily obstructed
   radio.openWritingPipe(pipe);      //Controller only transmits for the time being so we open a connection to send data
   radio.setDataRate(RF24_250KBPS);  //Using a relatively low data rate, should have a bit better reliability and is sufficient for small payload
-  radio.setChannel(108);            //Uses the last possible channel on the nrf module
+  radio.setChannel(0);            //Uses the last possible channel on the nrf module
 
 
 #ifdef DEBUGMODE
@@ -62,8 +62,8 @@ void loop() {
     mappedValue = 254;
 
 #ifdef DEBUGMODE
-  radio.printDetails();
-  Serial.println(sensorValue);
+  //radio.printDetails();
+  Serial.println(mappedValue);
 #endif
 
   msg[0] = mappedValue;
